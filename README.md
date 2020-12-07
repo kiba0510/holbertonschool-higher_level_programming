@@ -75,7 +75,9 @@ Namespaces are one honking great idea -- let's do more of those!
   * [An Informal Introduction to Python](https://docs.python.org/3.4/tutorial/introduction.html)
 * [How To Use String Formatters in Python 3](https://www.digitalocean.com/community/tutorials/how-to-use-string-formatters-in-python-3)
 * [Learn to Program](https://www.youtube.com/playlist?list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt)
+* [The Complete Python Course For Beginners](https://www.youtube.com/watch?v=sxTmJE4k0ho&list=WL&index=108&t=5140s)
 * [PEP 8 – Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/)
+
 
 
   
