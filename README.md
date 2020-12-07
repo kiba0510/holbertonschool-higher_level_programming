@@ -47,7 +47,7 @@ Namespaces are one honking great idea -- let's do more of those!
 * All your files must be executable
 * The length of your files will be tested using ``` wc ```
 
-### Shell Scripts
+### Shell Scripts :shell:
 * Allowed editors: ``` vi, vim, emacs ```
 * All your scripts will be tested on Ubuntu 14.04 LTS
 * All your scripts should be exactly two lines long ``` (wc -l file ``` should print 2)
@@ -55,7 +55,7 @@ Namespaces are one honking great idea -- let's do more of those!
 * The first line of all your files should be exactly ``` #!/bin/bash ```
 * All your files must be executable
 
-### C Scripts
+### C Scripts 
 * Allowed editors: ``` vi, vim, emacs ```
 * All your files will be compiled on Ubuntu 14.04 LTS
 * Your programs and functions will be compiled with ``` gcc 4.8.4 ``` using the flags ``` -Wall -Werror -Wextra and -pedantic ```
@@ -68,3 +68,14 @@ Namespaces are one honking great idea -- let's do more of those!
 * Don’t forget to push your header file
 * All your header files should be include guarded
 
+## Resourses :books:
+* [The Python tutorial](https://docs.python.org/3.4/tutorial/index.html)
+  * [Whetting Your Appetite](https://docs.python.org/3.4/tutorial/appetite.html)
+  * [Using the Python Interpreter](https://docs.python.org/3.4/tutorial/interpreter.html)
+  * [An Informal Introduction to Python](https://docs.python.org/3.4/tutorial/introduction.html)
+* [How To Use String Formatters in Python 3](https://www.digitalocean.com/community/tutorials/how-to-use-string-formatters-in-python-3)
+* [Learn to Program](https://www.youtube.com/playlist?list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt)
+* [PEP 8 – Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/)
+
+
+  
