@@ -1,4 +1,4 @@
-# holbertonschool-higher_level_programming :snake:
+# Holbertonschool-higher_level_programming :snake:
 
 ## The **_ZEN_** of Python, by Tim Peters
 ```
