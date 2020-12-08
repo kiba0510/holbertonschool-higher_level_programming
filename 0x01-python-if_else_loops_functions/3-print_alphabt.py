@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 # lowercase printing ommiting 'e' and 'q'
-for c in range(97, 123):
-    if c == 101 or c == 113:
-        continue
-    print(chr(c), end="")
+for i in range(ord('a'), ord('z') + 1):
+    if (i != 101 and i != 113):
+        print("{}".format(chr(i)), end="")
