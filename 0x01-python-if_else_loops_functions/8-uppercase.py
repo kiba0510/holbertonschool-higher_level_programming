@@ -8,4 +8,4 @@ def uppercase(str):
         print("{}".format(chr(ord(up) - 32)
                           if (ord(up) >= ord("a") and
                               ord(up) <= ord("z")) else up), end="")
-    print()
+    print('\n', end='')
