@@ -1,11 +1,11 @@
-# Python - More Data Structures: Set, Dictionary
+# Python - More Data Structures: Set, Dictionary :snake:
 
 ## Resources :books:
 * [Data Structures](https://intranet.hbtn.io/rltoken/dnFegYagqFoW7WraIP-9RA)
 * [Lambda, Filter, Reduce and Map](https://intranet.hbtn.io/rltoken/xXAlsMIs9-sCL4fljYeNfg)
 * [Learn to Program 12 Lambda Map Filter Reduce](https://intranet.hbtn.io/rltoken/AT-UtsGuhgIzQSwSdKvckw)
 
-## Objectives
+## Objectives :computer:
 * Why Python programming is awesome
 * What are set and how to use them
 * What are the most common methods of set and how to use them
@@ -18,7 +18,7 @@
 * What is a lambda function
 * What is map, reduce and filter functions
 
-## Functions Used in this Project
+## Functions Used in this Project :hammer_and_wrench:
 * square_matrix_simple(matrix=[])
 ```
 Computes the square value of all integers of a matrix.
