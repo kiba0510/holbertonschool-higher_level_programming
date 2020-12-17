@@ -24,35 +24,45 @@
 Computes the square value of all integers of a matrix.
 ```
 * search_replace(my_list, search, replace)
+```
 Replaces all occurrences of an element by another in a new list.
-
+```
 * uniq_add(my_list=[])
+```
 Adds all unique integers in a list (only once for each integer).
-
+```
 * common_elements(set_1, set_2)
+```
 Returns a set of common elements in two sets.
-
+```
 * only_diff_elements(set_1, set_2)
+```
 Returns a set of all elements present in only one set.
-
+```
 * number_keys(a_dictionary)
+```
 Returns the number of keys in a dictionary.
-
+```
 * print_sorted_dictionary(a_dictionary)
+```
 Prints a dictionary by ordered keys.
-
+```
 * update_dictionary(a_dictionary, key, value)
+```
 Replaces or adds key/value in a dictionary.
-
+```
 * simple_delete(a_dictionary, key="")
+```
 Deletes a key in a dictionary.
-
+```
 * multiply_by_2(a_dictionary)
+```
 Returns a new dictionary with all values multiplied by 2
-
+```
 * best_score(a_dictionary)
+```
 Returns a key with the biggest integer value.
-
+```
 * multiply_list_map(my_list=[], number=0)
 ```
 Returns a list with all values multiplied by a number without using any loops.
