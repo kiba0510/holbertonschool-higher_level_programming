@@ -9,6 +9,7 @@
 * [Sets Basics](https://www.youtube.com/watch?v=r3R3h5ly_8g&t=954s)
 * [Dictionary Basics](https://www.youtube.com/watch?v=daefaLgNkw0)
 * [Lambda, Map, Filter and Reduce](https://www.youtube.com/watch?v=D2TJ9wvSP94)
+* [More About Lambda](https://www.w3schools.com/python/python_lambda.asp)
 
 ## Objectives :computer:
 * Why Python programming is awesome
