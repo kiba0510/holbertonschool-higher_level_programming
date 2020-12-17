@@ -7,7 +7,7 @@
 * [Python Sets](https://www.w3schools.com/python/python_sets.asp)
 * [Python Dictionaries](https://www.w3schools.com/python/python_dictionaries.asp)
 * [Sets Basics](https://www.youtube.com/watch?v=r3R3h5ly_8g&t=954s)
-* [Dictionary Basics] (https://www.youtube.com/watch?v=daefaLgNkw0)
+* [Dictionary Basics](https://www.youtube.com/watch?v=daefaLgNkw0)
 * [Lambda, Map, Filter and Reduce](https://www.youtube.com/watch?v=D2TJ9wvSP94)
 
 ## Objectives :computer:
