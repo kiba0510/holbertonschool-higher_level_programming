@@ -34,7 +34,9 @@ class Square:
     @size.setter
     def size(self, value):
         """
-
+        Using setter to update the private attributes
+        args:
+        Value (int): Must be an integer and >= 0
         """
         if not isinstance(value, int):
             raise TypeError('size must be an integer')
