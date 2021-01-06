@@ -8,8 +8,6 @@ class Square:
     """
     Class defining the size of a square
     """
-    
-    
     def __init__(self, size=0):
         """
         Initialization of instanced attribute
