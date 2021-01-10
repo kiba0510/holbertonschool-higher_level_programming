@@ -29,3 +29,8 @@ def matrix_divided(matrix, div):
     elif div == 0:
         raise ZeroDivisionError("division by zero")
     return [list(map(lambda n: round((n / div), 2), sub)) for sub in matrix]
+
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testfile("tests/2-matrix_divided.txt")
