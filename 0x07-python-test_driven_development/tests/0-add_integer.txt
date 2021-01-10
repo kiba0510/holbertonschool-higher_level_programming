@@ -1,55 +1,115 @@
->>> add_integer = __import__('0-add_integer').add_integer
+Function Check ```add_integer```
+"""
+Test function that adds 2 integers.
+- Prototype: def add_integer(a, b=98):
+- a and b must be integers or floats, otherwise raise a TypeError exception with the message a must be an integer or b must be an integer
+- a and b must be first casted to integers if they are float
+- Returns an integer: the addition of a and b
+- You are not allowed to import any module
+"""
+-----------------------
+Checking docstring mod:
+    >>> __import__('0-add_integer').__doc__ != None
+    True
 
-Check if both values are float type
->>> add_integer(2.0, 2.0)
-4
+Import add_integer function:
 
-check if values are int and float type
->>> add_integer(1, 2.0)
-3
->>> add_integer(2.0, 1)
-3
+    >>> add_integer = __import__('0-add_integer').add_integer
 
-Check if values are two int type
->>> add_integer(1, 1)
-2
+check functions docstring:
 
-Check the value type
->>> type(add_integer(2.0, 1))
-<class 'int'>
+    >>> add_integer.__doc__ != None
+    True
 
->>> type(add_integer(2.0, 1.0))
-<class 'int'>
+Basic use function:
+    >>> add_integer(2, 1)
+    3
+    >>> add_integer(90, 8)
+    98
+    >>> add_integer(100)
+    198
 
-check with a wrong value type
->>> add_integer("x", 1)
-Traceback (most recent call last):
+Basic use with negative numbers:
+
+    >>> add_integer(-1, 2)
+    1
+    >>> add_integer(-3, -6)
+    -9
+    >>> add_integer(3, -2)
+    1
+    >>> add_integer(-1)
+    97
+
+Basic use with complex numbers:
+
+    >>> add_integer(8j, 2)
+    Traceback (most recent call last):
     ...
-TypeError: a must be an integer
+    TypeError: a must be an integer
 
->>> add_integer(1, "x")
-Traceback (most recent call last):
+    >>> add_integer(8, 561j)
+    Traceback (most recent call last):
     ...
-TypeError: b must be an integer
+    TypeError: b must be an integer
 
->>> add_integer(-1, -3)
--4
+    >>> add_integer(3j)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
 
->>> add_integer(float('nan'), 3)
-Traceback (most recent call last):
-    ...
-ValueError: cannot convert float NaN to integer
+Float use test:
 
->>> add_integer(float("inf"), 3)
-Traceback (most recent call last):
-    ...
-OverflowError: cannot convert float infinity to integer
+    >>> add_integer(20.3)
+    118
+    >>> add_integer(10, 22.2)
+    32
+    >>> add_integer(-10, 22.2)
+    12
+    >>> add_integer(-10.5)
+    87
 
->>> add_integer(3)
-Traceback (most recent call last):
+Float infinitive:
+
+    >>> add_integer(float('inf'), 3)
+    Traceback (most recent call last):
     ...
-TypeError: add_integer() missing 1 required positional argument: 'b'
->>> add_integer()
-Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
+
+Pass String Chech arg 1 (a):
+
+    >>> add_integer("Hello")
+    Traceback (most recent call last):
     ...
-TypeError: add_integer() missing 2 required positional arguments: 'a' and 'b'
+    TypeError: a must be an integer
+
+Check 1 argument and numb:
+
+    >>> add_integer("Hello", 1)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> add_integer(0, "Hello")
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+Diferent that 2 arguments:
+
+    >>> add_integer(0, 2, 3)
+    Traceback (most recent call last):
+    ...
+    TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+Not arguments passed:
+
+    >>> add_integer()
+    Traceback (most recent call last):
+    ...
+    TypeError: add_integer() missing 1 required positional argument: 'a'
+
+Argument None passed:
+    >>> add_integer(None)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
