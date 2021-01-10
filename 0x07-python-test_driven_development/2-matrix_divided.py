@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""
+'''
 The module define a function called matrix_divided
-"""
+'''
 
 
 def matrix_divided(matrix, div):
