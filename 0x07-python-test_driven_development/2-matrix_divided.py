@@ -8,8 +8,6 @@ def matrix_divided(matrix, div):
     """
     a function to divide a matrix by a constant
     """
-    
-    
     if type(matrix) is not list or len(matrix) is 0:
         raise TypeError("matrix must be a matrix\
         (list of lists) of integers/floats")
