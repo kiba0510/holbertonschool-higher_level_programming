@@ -79,9 +79,8 @@ class Rectangle:
         '''
         if self.height == 0 or self.width == 0:
             return ""
-        pic = (str(self.print_symbol) * self.width + "\n") * self.height
-        return pic[:-1:]
-       # return(("#" * self.width + "\n") * self.height)[:-1]
+        psy = (str(self.print_symbol) * self.width + "\n") * self.height
+        return psy[:-1:]
 
     def __repr__(self):
         '''
