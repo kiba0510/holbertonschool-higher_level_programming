@@ -3,6 +3,7 @@
 Implementing a new class called Rectangle
 """
 
+
 class Rectangle(BaseGeometry):
     '''
     Class Rectangle inheriting BaseGeometry class attributes
