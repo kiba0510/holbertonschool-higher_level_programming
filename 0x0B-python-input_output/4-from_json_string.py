@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Defining from_json_string 
+Defining from_json_string
 """
 import json
 
