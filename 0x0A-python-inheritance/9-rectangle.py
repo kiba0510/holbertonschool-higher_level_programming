@@ -29,4 +29,5 @@ class Rectangle(BaseGeometry):
         '''
         Defining str method
         '''
-        return ("[{}] {}/{}".format(type(self).__name__, self.__width, self.__height))
+        return ("[{}] {}/{}".format(type(self).__name__,\
+                                    self.__width, self.__height))
