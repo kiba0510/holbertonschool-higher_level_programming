@@ -1,13 +1,12 @@
 #!/usr/bin/python3
 """
-Defining is_same_class function
+Class method MyList with attributes of list
 """
 
 
-def is_same_class(obj, a_class):
+class MyList(list):
     """
-    Fuction that checks if obj have same class
+    class method that inherits a list
     """
-    if type(obj) is a_class:
-        return True
-    return False
+    def print_sorted(self):
+        print(sorted(self))
