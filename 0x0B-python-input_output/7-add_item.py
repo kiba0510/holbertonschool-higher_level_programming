@@ -7,6 +7,6 @@ try:
     file = load("add_item.json")
 except FileNotFoundError:
     file = []
-for i in sys.argv[1:]:
-    file.append(i)
+for item in sys.argv[1:]:
+    file.append(item)
 save(file, "add_item.json")
