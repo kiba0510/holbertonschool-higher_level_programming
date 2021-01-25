@@ -5,13 +5,13 @@ class Base:
     '''
     Manage id attribute in all future classes to avoid duplicating the same code
     '''
-    
+    __nb_objects = 0
 
     def __init__(self, id=None):
-       
-        __nb_object = 0
 
-        if id is not None:
-            self.id = id
-        else:
-            self.id = __nb_objects + 1
+
+        if id is None:
+            Base.__nb_objects + 1
+            id = Base.__nb_objects
+
+        self.id = id
