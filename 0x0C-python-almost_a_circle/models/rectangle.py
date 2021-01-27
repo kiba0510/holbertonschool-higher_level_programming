@@ -115,6 +115,6 @@ class Rectangle(Base):
         '''
         Override the __str__ method
         '''
-       return '[Rectangle] ({}) {}/{} - {}/{}'\
-            .format(self.id,
-                    self.x, self.y, self.width, self.height)
+        str1 = '(' + str(self.id) + ') ' + str(self.__x) + '/'
+        str2 = str(self.__y) + ' - ' + str(self.__width)
+        return "[Rectangle] " + str1 + str2 + "/" + str(self.__height)
