@@ -13,6 +13,13 @@ class Rectangle(Base):
         '''
         Initiating Rectangle class
         '''
+<<<<<<< HEAD
+=======
+        self.__width = width
+        self.__height = height
+        self.__x = x
+        self.__y = y
+>>>>>>> 5f7a3680afd32aa2e8078b6cdc216ac764b4c811
         super().__init__(id)
         if type(width) is not int:
             raise TypeError('width must be an integer')
@@ -47,10 +54,17 @@ class Rectangle(Base):
         '''
         Defining setter of width
         '''
+<<<<<<< HEAD
         if type(value) is not int:
             raise TypeError('width must be an integer')
         if value <= 0:
             raise ValueError('width must be > 0')
+=======
+        if not isinstance(width, int):
+            raise TypeError("width must be an integer")
+        if width <= 0:
+            raise ValueError("width must be > 0")
+>>>>>>> 5f7a3680afd32aa2e8078b6cdc216ac764b4c811
         self.__width = value
 
     @property
