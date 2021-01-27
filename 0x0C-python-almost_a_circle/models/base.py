@@ -4,7 +4,7 @@
 
 class Base:
     '''
-    Manage id attribute in all future classes 
+    Manage id attribute in all future classes
     to avoid duplicating the same code
     '''
     __nb_objects = 0
