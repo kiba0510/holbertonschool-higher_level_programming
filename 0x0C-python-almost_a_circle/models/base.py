@@ -20,32 +20,30 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        '''
-        Static method that returns JSON string representation
-        '''
+        """Method to use Json"""
         if list_dictionaries is None or not list_dictionaries:
             return "[]"
-        return json.dumps(list_dictionaries)
+        else:
+            return json.dumps(list_dictionaries)
 
     @classmethod
-    def save_to_file(cls, list_dictionaries):
-        '''
-        Writes the JSON string representation of list_objs to a file
-        '''
-        file = "{}.json".format(cls.__name__)
-        with open(file, 'w', encoding='UTF-8') as fname:
-            emptylist = []
-            if list_objs is not None:
-                for obj in list_objs:
-                    emptylist.append(cls.to_dictionary(obj))
-                emptylist = Base.to_json_string(emptylist)
-                file.write(str(emptylist))
+    def save_to_file(cls, list_objs):
+        """Method to write the string rep in a file
+        Args: list_objs, cls.
+        Note: json.dumps() converts a Python obj to JSON string and writes
+        """
+        name = cls.__name__ + '.json'
+        emptylist = []
+        if list_objs is not None:
+            for elem in list_objs:
+                aux = cls.to_dictionary(elem)
+                emptylist.append(aux)
+        with open(name, mode='w', encoding="UTF8") as xfile:
+            xfile.write(cls.to_json_string(emptylist))
 
     @staticmethod
     def from_json_string(json_string):
-        '''
-        Returns the list of the JSON string representation json_string
-        '''
+        """Method to return the list of JSON string rep"""
         emptylist = []
         if json_string is None or not json_string:
             return emptylist
@@ -71,7 +69,7 @@ class Base:
             with open(name, mode='r', encoding='UTF8') as xfile:
                 aux = xfile.read()
                 emptylist = cls.from_json_string(aux)
-                '''List of dictionaries'''
+                """List of dicts"""
                 for elem in emptylist:
                     aux2 = cls.create(**elem)
                     list3.append(aux2)
