@@ -9,5 +9,5 @@ exports.nbOccurences = function (list, searchElement) {
             counter += 1;
         }
     }
-    return counter;
+    return (counter);
 }
