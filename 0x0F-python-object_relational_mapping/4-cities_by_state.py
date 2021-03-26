@@ -14,10 +14,13 @@ if __name__ == "__main__":
                          port=3306)
 
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM states WHERE name REGEXP '^N' ORDER BY id ASC")
+    cursor.execute("SELECT cities.id, cities.name, states.name\
+    FROM cities\
+    JOIN states\
+    ON state_id=states.id\
+    ORDER BY cities.id ASC")
     states = cursor.fetchall()
     for state in states:
-        if ("N" in state[1]):
-            print(state)
+        print(state)
     cursor.close()
     db.close()
