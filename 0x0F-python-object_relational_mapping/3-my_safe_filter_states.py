@@ -1,12 +1,17 @@
 #!/usr/bin/python3
+"""
+Takes in arguments and displays all values in the table of database
+where name matches the argument. But this time, write one that is
+SAFE FROM MySQL INJECTIONS!
+"""
+
+
 import MySQLdb
 from sys import argv
 
 if __name__ == "__main__":
-    '''
-    Script that lists all states with a name
-    starting with N (upper N) from the database hbtn_0e_0_usa
-    '''
+    """Connect to a MySQL server."""
+
     db = MySQLdb.connect(host="localhost",
                          user=argv[1],
                          passwd=argv[2],
