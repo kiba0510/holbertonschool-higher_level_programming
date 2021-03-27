@@ -9,7 +9,7 @@ from sys import argv
 
 if __name__ == "__main__":
     """Connect to a MySQL server."""
-    
+
     db = MySQLdb.connect(host="localhost",
                          user=argv[1],
                          passwd=argv[2],
