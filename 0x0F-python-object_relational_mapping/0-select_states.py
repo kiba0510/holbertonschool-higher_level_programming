@@ -6,19 +6,19 @@ import sys
 
 if __name__ == "__main__":
     """Main function listing all stages of database"""
-    
+
     db = MySQLdb.connect(host="localhost",
                          user=sys.argv[1],
                          passwd=sys.argv[2],
                          db=sys.argv[3],
                          port=3306)
-    
+
     """Instatiate a MySQL Curso Object"""
     cursor = db.cursor()
-    
+
     """Execute the DataBase operation"""
     cursor.execute("SELECT * FROM states ORDER BY id ASC")
-    
+
     for row in cursor.fetchall():
         print(row)
 
