@@ -20,8 +20,7 @@ if __name__ == "__main__":
                                              db_name, pool_pre_pint=True))
     Session = sessionmaker(bind=engine)
     session = Session()
-    query = (session.query(State).
-             filter_by(name=search).order_by(State.id).all())
+    query = session.query(State).filter(State.name == state_search).first()
     
     if len(query) == 0:
         print("Not found")
