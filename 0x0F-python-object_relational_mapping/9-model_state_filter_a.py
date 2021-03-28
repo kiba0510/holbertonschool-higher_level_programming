@@ -17,10 +17,10 @@ if __name__ == "__main__":
     connection = 'mysql+mysqldb://{}:{}@localhost:3306/{}'
 
     engine = create_engine(connection.format(user_name, password,
-                                            db_name, pool_pre_pint=True))
+                                             db_name, pool_pre_pint=True))
     Session = sessionmaker(bind=engine)
     session = Session()
-    query = session.query(State).\
-            filter(State.name.ilike("%a%")).order_by(State.id).all()
+    query = session.query(State).filter(State.name.
+                                        ilike("%a%")).order_by(State.id).all()
     for item in query:
         print("{}: {}".format(item.id, item.name))
