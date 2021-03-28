@@ -6,34 +6,23 @@ State object from the database hbtn_0e_6_usa
 
 from sys import argv
 from model_state import Base, State
-from sqlalchemy import (create_engine)
+from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
-    
-    """Function that lists all State objects from the db"""
-    
-    credentials = {
-        "host": "localhost",
-        "port": "3306",
-        "user": argv[1],
-        "pass": argv[2],
-        "db": argv[3]}
-
-    str_format = 'mysql+mysqldb://{user}:{pass}@{host}:{port}/{db}'
-    engine = create_engine(str_format.format(
-        **credentials), pool_pre_ping=True)
-
-    Base.metadata.create_all(engine)
+    engine = create_engine("mysql+mysqldb://{}:{}@localhost/{}".
+                           format(argv[1], argv[2],
+                                  argv[3]), pool_pre_ping=True)
 
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    states = session.query(State).filter(State.name == state_search).first()
+    Base.metadata.create_all(engine)
 
-    if not states:
-        print("Not found")
+    state = session.query(State).\
+        filter(State.name == argv[4]).order_by(State.id).all()
+    if state:
+        print("{}".format(state[0].id))
     else:
-        print("{}".format(states.id))
-
+        print("Not found")
     session.close()
