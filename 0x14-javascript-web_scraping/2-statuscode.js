@@ -4,10 +4,10 @@
 */
 const request = require('request');
 const info = {
-    url: process.argv[2],
-    method: 'GET'
+  url: process.argv[2],
+  method: 'GET'
 };
 request(info, (err, response) => {
-    if (err) throw err;
-    console.log('code:', response.statusCode);
+  if (err) throw err;
+  console.log('code:', response.statusCode);
 });
